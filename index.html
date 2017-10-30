@@ -19,7 +19,7 @@
 
       var html = document.documentElement;
       window.onscroll = () => {
-        var z = html.offsetHeight - html.clientHeight;
+        var z = html.offsetHeight - window.innerHeight;
           if (window.pageYOffset >  parseInt(z)) {
               function multiplyNode(node, count, deep) {
                   for (var i = 0, copy; i < count - 1; i++) {
